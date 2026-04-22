@@ -8,7 +8,7 @@ class Medicament extends Model {
     public function getAllMedicaments(){
         $requette = $this->db->prepare("SELECT * FROM tbl_medicament");
         $requette->execute([]);
-        $resultat = $requette->fetchAll();
+        return $resultat = $requette->fetchAll();
     }
 
     public function createMedicament(){

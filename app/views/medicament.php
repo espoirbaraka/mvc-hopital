@@ -7,5 +7,8 @@
 </head>
 <body>
     <h1>Liste de medicaments</h1>
+    <?php
+    var_dump($data);
+    ?>
 </body>
 </html>
