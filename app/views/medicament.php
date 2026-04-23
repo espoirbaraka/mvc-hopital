@@ -7,7 +7,8 @@
 </head>
 <body>
     <h1>Liste de medicaments</h1>
-    <a href="?page=insererMedoc">Ajouetr</a>
+    <h3>AMANI MUSAFIRI David</h3>
+    <a href="?page=insererMedoc">Ajouter</a>
     <?php
     var_dump($data);
     ?>
