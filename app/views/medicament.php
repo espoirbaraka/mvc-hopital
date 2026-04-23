@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Liste de medicaments</h1>
-    <h3>AMANI MUSAFIRI David</h3>
+    <h3>AMANI MUSAFIRI David / LIC2 LGL</h3>
     <a href="?page=insererMedoc">Ajouter</a>
     <?php
     var_dump($data);
