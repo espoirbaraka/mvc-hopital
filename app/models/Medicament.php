@@ -11,8 +11,13 @@ class Medicament extends Model {
         return $resultat = $requette->fetchAll();
     }
 
-    public function createMedicament(){
-
+    public function createMedicament($design, $desc, $prix){
+        $this->designation = $design;
+        $this->description = $desc;
+        $this->prix = $prix;
+        $requette = $this->db->prepare("INSERT INTO tbl_medicament
+        (designation, description, prix) VALUES(?, ?, ?)");
+        $requette->execute([$this->designation, $this->description, $this->prix]);
     }
 
     public function updateMedicament(){
