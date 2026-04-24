@@ -15,7 +15,7 @@ class Medicament extends Model {
         $this->designation=$design;
         $this->description=$desc;
         $this->prix=$prix;
-        $requette = $this -> db -> prepare("INSERT INTO tbl_medicament 
+        $requette = $this->db->prepare("INSERT INTO tbl_medicament 
         (designation, description, prix) VALUES(?, ?, ?)");
         $requette->execute([$this->designation, $this->description, $this->prix]);
     }

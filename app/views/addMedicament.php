@@ -6,25 +6,22 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Inserez un medicament</h1>
-  <a href="?page=liste">Liste</a>
-  <form action="?page=insert" method="post">
-    <div>
-      <label for="">Designation</label>
-      <input type="text" name="designation"></br>
-    </div>
-
-    <div>
-      <label for="">Description</label>
-      <input type="text" name="description"></br>
-    </div>
-
-    <div>
-      <label for="">Prix</label>
-      <input type="text" name="prix"></br>
-    </div>
-
-    <input type="submit" name="valider" value="Inserer">
-  </form>
+    <h1>Inserez un medicament</h1>
+    <a href="?page=liste">Liste</a>
+    <form action="?page=insert" method="POST">
+        <div>
+            <label for="">Designation</label>
+            <input type="text" name="designation">
+        </div>
+        <div>
+            <label for="">Description</label>
+            <input type="text" name="description">
+        </div>
+        <div>
+            <label for="">Prix</label>
+            <input type="number" name="prix">
+        </div>
+        <input type="submit" name="valider" value="Inserer">
+    </form>
 </body>
 </html>
