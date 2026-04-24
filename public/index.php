@@ -14,3 +14,4 @@ if($page == "insererMedoc"){
 } elseif($page == "insert"){
     $medicament->insertMedicament();
 }
+
