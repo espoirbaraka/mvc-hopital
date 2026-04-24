@@ -18,6 +18,6 @@ class MedicamentController extends Controller{
         $medicament = new Medicament();
         $medicament->createMedicament($design, $desc, $prix);
 
-        header('Location: ?page=liste');
+        header("Location: ?page=liste");
     }
 }
