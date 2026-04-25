@@ -8,3 +8,4 @@ class Model{
         return $this->db = $database->connect();
     }
 }
+
