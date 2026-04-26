@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ajouter médicament</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        input, textarea { margin: 5px 0; padding: 5px; }
+    </style>
 </head>
 <body>
-    <h1>Inserez un medicament</h1>
-    <a href="?page=liste">Liste</a>
+    <h1>Ajouter un médicament</h1>
+    <a href="?page=liste">Retour</a>
+
     <form action="?page=insert" method="POST">
-        <div>
-            <label for="">Designation</label>
-            <input type="text" name="designation">
-        </div>
-        <div>
-            <label for="">Description</label>
-            <input type="text" name="description">
-        </div>
-        <div>
-            <label for="">Prix</label>
-            <input type="number" name="prix">
-        </div>
-        <input type="submit" name="valider" value="Inserer">
+        <div><input type="text" name="designation" placeholder="Désignation" required></div>
+        <div><textarea name="description" placeholder="Description" rows="3"></textarea></div>
+        <div><input type="number" name="prix" step="0.01" placeholder="Prix" required></div>
+        <input type="submit" name="valider" value="Enregistrer">
     </form>
 </body>
 </html>
