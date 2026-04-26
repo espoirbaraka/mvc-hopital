@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ajouter Medicament</title>
 </head>
 <body>
+    <?php if(isset($_SESSION['username'])): ?>
+        <p>Bienvenue, <?php echo $_SESSION['username']; ?> | <a href="?page=logout">Déconnexion</a></p>
+    <?php endif; ?>
+    
     <h1>Inserez un medicament</h1>
     <a href="?page=liste">Liste</a>
     <form action="?page=insert" method="POST">
