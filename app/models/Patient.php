@@ -36,7 +36,7 @@
         public function updatePatient($code_patient, $nom, $postom, $prenom, $date_naissance,
                                 	$adresse, $telephone)
         {
-            $this->code_patient = $code_patient;
+            $this->code = $code_patient;
             $this->nom = $nom;
             $this->postnom = $postom;
             $this->prenom = $prenom;
@@ -47,11 +47,11 @@
             $requette = $this->db->prepare("UPDATE tbl_patient SET nom=?, postnom=?, prenom=?, 
                 date_naissance=?, adresse=?, telephone=? WHERE code_patient=?");
             $requette->execute([$this->nom, $this->postnom, $this->prenom, $this->date_naissance,
-                                    $this->adresse, $this->telephone, $this->code_patient]);
+                                    $this->adresse, $this->telephone, $this->code]);
         }
 
         public function deletePatient($code_patient){
-            $this->code = $code_patient;
+            $this->code = $code;
             $request = $this->db->prepare("DELETE FROM tbl_patient WHERE code_patient=?");
             $request->execute([$this->code]);
         }
