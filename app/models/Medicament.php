@@ -20,11 +20,18 @@ class Medicament extends Model {
         $requette->execute([$this->designation, $this->description, $this->prix]);
     }
 
-    public function updateMedicament(){
-        
+    public function updateMedicament($code, $design, $desc, $prix){
+        $this->code = $code;
+        $this->designation = $design;
+        $this->description = $desc;
+        $this->prix = $prix;
+        $requette = $this->db->prepare("UPDATE tbl_medicament SET designation = ?, description = ?, prix = ? WHERE code_medicament = ?");
+        return $requette->execute([$this->designation, $this->description, $this->prix, $this->code]);
     }
 
-    public function deleteMedicament(){
-        
+    public function deleteMedicament($code){
+        $this->code = $code;
+        $requette = $this->db->prepare("DELETE FROM tbl_medicament WHERE code_medicament = ?");
+        return $requette->execute([$this->code]);
     }
 }
