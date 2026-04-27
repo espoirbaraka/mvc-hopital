@@ -22,6 +22,8 @@
             <input type="number" name="prix">
         </div>
         <input type="submit" name="valider" value="Inserer">
+
+        <p>Je m'appelle Aris</p>
     </form>
 </body>
 </html>
