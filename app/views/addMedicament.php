@@ -22,6 +22,10 @@
             <input type="number" name="prix">
         </div>
         <input type="submit" name="valider" value="Inserer">
+         </div>
+         <label for="">Roland</label>
+            <input type="text" name="Roland">
+    
     </form>
 </body>
 </html>
