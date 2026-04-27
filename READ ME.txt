@@ -1,0 +1,2 @@
+Nous avons mis en oeuvre un système  médical
+Pour permettre de savoir la quantité  des médicaments qu'il y aurais pris 
