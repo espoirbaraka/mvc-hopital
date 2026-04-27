@@ -1,10 +1,11 @@
 <?php
-include "Database.php";
+require_once __DIR__ . '/Database.php';
+
 class Model{
-    public $db;
+    protected $db;
 
     public function __construct(){
-        $database = new Database();
-        return $this->db = $database->connect();
+        $database = Database::getInstance();
+        $this->db = $database->getConnection();
     }
 }

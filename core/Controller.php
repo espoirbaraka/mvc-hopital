@@ -1,6 +1,10 @@
 <?php
 class Controller{
     public function view($file, $data = []){
-        require "../app/views/".$file.".php";
+        $filePath = __DIR__ . '/../app/views/' . $file . '.php';
+        if (!file_exists($filePath)) {
+            die("Vue non trouvée : $file");
+        }
+        require $filePath;
     }
 }
