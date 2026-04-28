@@ -1,10 +1,16 @@
 <?php
-class Database{
-    public $connexion;
-
-    public function connect(){
-       $connexion = 
-       new PDO('mysql:host=localhost;dbname=hopital', 'root', ''); 
-       return $connexion;
+class Database
+{
+    public function connect()
+    {
+        return new PDO(
+            'mysql:host=localhost;dbname=hopital;charset=utf8mb4',
+            'root',
+            '',
+            [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            ]
+        );
     }
 }
