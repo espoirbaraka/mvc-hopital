@@ -1,10 +1,13 @@
 <?php
 include "Database.php";
-class Model{
+
+class Model
+{
     public $db;
 
-    public function __construct(){
+    public function __construct()
+    {
         $database = new Database();
-        return $this->db = $database->connect();
+        $this->db = $database->connect();
     }
 }
