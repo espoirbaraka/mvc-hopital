@@ -1,0 +1,27 @@
+# 🚀 Projet Fork - Contribution
+
+Ce projet est un fork utilisé dans le cadre d'un exercice de contribution avec Git et GitHub.
+
+## 👤 Auteur
+- Nom : TonNom
+
+## ✏️ Modification apportée
+J’ai ajouté une modification simple dans ce projet afin de comprendre le fonctionnement de Git :
+- Mise à jour du fichier README
+- Ajout d’une description personnalisée
+
+## 🎯 Objectif
+L’objectif de cet exercice est de :
+- Cloner un repository
+- Créer une branche
+- Apporter une modification
+- Push les changements
+- Créer une Pull Request
+
+## 🛠️ Outils utilisés
+- Git
+- GitHub
+- Git Bash
+
+## 📌 Remarque
+Ceci est un exercice pratique pour apprendre les bases du versionnement avec Git.
