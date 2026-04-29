@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Liste de medicaments</h1>
+    //pour le cadre de tp de fork voici mon commentaire
+    <h1>Liste des medicaments</h1>
     <a href="?page=insererMedoc">Ajouter</a>
     <?php
     var_dump($data);
