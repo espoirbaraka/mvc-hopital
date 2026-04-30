@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Inserez un medicament</h1>
+    <h1>Inserez un medicament </h1>
+    <p>SHOBORA RUVAMWABO GLOIRE LIC2/LSI</p>
     <a href="?page=liste">Liste</a>
     <form action="?page=insert" method="POST">
         <div>
