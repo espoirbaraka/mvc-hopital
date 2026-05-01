@@ -10,6 +10,7 @@
     <a href="?page=insererMedoc">Ajouter</a>
     <?php
     var_dump($data);
+    // Commentaire de Therese Mowavingi
     ?>
 </body>
 </html>

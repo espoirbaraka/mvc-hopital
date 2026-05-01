@@ -1,5 +1,5 @@
 <?php
-include "../core/Controller.php";
+include "../core/Controller.php"; //Inclusion du controller
 include "../core/Model.php";
 include "../app/controllers/MedicamentController.php";
 include "../app/models/Medicament.php";
