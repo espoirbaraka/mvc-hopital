@@ -3,8 +3,8 @@ class Database{
     public $connexion;
 
     public function connect(){
-       $connexion = 
+       $this->connexion = 
        new PDO('mysql:host=localhost;dbname=hopital', 'root', ''); 
-       return $connexion;
+       return $this->connexion;
     }
 }
