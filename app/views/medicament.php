@@ -9,6 +9,7 @@
     <h1>Liste de medicaments</h1>
     <a href="?page=insererMedoc">Ajouter</a>
     <?php
+// Mon commentaire, Aubin
     var_dump($data);
     ?>
 </body>
