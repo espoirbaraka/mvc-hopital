@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Inserez un medicament FIDELE MUHAMIRIZA@</h1>
+    <h1>Inserez un medicament FIDELE MUHAMIRIZA</h1>
     <a href="?page=liste">Liste</a>
     <form action="?page=insert" method="POST">
         <div>
