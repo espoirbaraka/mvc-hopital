@@ -6,7 +6,9 @@ include "../app/models/Medicament.php";
 
 $medicament = new MedicamentController();
 
-$page = $_GET['page'];
+//   mon commentaire 
+
+$page = $_GET['page'];  
 if($page == "insererMedoc"){
     $medicament->displayAddMedicament();
 } elseif($page == "liste"){
