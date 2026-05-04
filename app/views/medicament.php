@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1>Liste de medicaments</h1>
+    <p>trying to add a code here</p>
+    <p>adding one line</p>
     <a href="?page=insererMedoc">Ajouter</a>
     <?php
     var_dump($data);
