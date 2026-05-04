@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>Inserez un medicament</h1>
+    <!-- Commentaire : Inserer un nouveau medicament -->
     <a href="?page=liste">Liste</a>
     <form action="?page=insert" method="POST">
         <div>
